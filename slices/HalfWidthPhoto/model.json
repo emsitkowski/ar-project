@@ -1,0 +1,35 @@
+{
+  "id": "half_width_photo",
+  "type": "SharedSlice",
+  "name": "HalfWidthPhoto",
+  "description": "HalfWidthPhoto",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HalfWidthPhoto",
+      "primary": {
+        "left_photo": {
+          "type": "Image",
+          "config": {
+            "label": "Left photo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "right_photo": {
+          "type": "Image",
+          "config": {
+            "label": "Right photo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

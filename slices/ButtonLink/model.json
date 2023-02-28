@@ -1,0 +1,34 @@
+{
+  "id": "button_link",
+  "type": "SharedSlice",
+  "name": "ButtonLink",
+  "description": "ButtonLink",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ButtonLink",
+      "primary": {
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "text",
+            "placeholder": ""
+          }
+        },
+        "url": {
+          "type": "Link",
+          "config": {
+            "label": "url",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

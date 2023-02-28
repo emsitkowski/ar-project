@@ -8,8 +8,56 @@
       "name": {
         "type": "Text",
         "config": {
-          "label": "Name",
+          "label": "Project name",
           "placeholder": ""
+        }
+      },
+      "secondary_name": {
+        "type": "Text",
+        "config": {
+          "label": "Full name",
+          "placeholder": ""
+        }
+      },
+      "category": {
+        "type": "Text",
+        "config": {
+          "label": "Category",
+          "placeholder": ""
+        }
+      },
+      "cover": {
+        "type": "Image",
+        "config": {
+          "label": "Cover Photo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "button_link": {
+              "type": "SharedSlice"
+            },
+            "full_width_photo": {
+              "type": "SharedSlice"
+            },
+            "half_width_photo": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     }

@@ -1,5 +1,22 @@
 {
   "_cts": {
     "project": {}
+  },
+  "slices": {
+    "FullWidthPhoto": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ButtonLink": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "HalfWidthPhoto": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

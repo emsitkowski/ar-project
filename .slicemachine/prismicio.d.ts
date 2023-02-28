@@ -9,7 +9,7 @@ type Simplify<T> = {
 /** Content for Project documents */
 interface ProjectDocumentData {
     /**
-     * Name field in *Project*
+     * Project name field in *Project*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -19,7 +19,67 @@ interface ProjectDocumentData {
      *
      */
     name: prismicT.KeyTextField;
+    /**
+     * Full name field in *Project*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.secondary_name
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    secondary_name: prismicT.KeyTextField;
+    /**
+     * Category field in *Project*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.category
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    category: prismicT.KeyTextField;
+    /**
+     * Cover Photo field in *Project*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.cover
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    cover: prismicT.ImageField<never>;
+    /**
+     * Description field in *Project*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.description
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * Slice Zone field in *Project*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<ProjectDocumentDataSlicesSlice>;
 }
+/**
+ * Slice for *Project → Slice Zone*
+ *
+ */
+type ProjectDocumentDataSlicesSlice = ButtonLinkSlice | FullWidthPhotoSlice | HalfWidthPhotoSlice;
 /**
  * Project document from Prismic
  *
@@ -31,11 +91,148 @@ interface ProjectDocumentData {
  */
 export type ProjectDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<ProjectDocumentData>, "project", Lang>;
 export type AllDocumentTypes = ProjectDocument;
+/**
+ * Primary content in ButtonLink → Primary
+ *
+ */
+interface ButtonLinkSliceDefaultPrimary {
+    /**
+     * text field in *ButtonLink → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: button_link.primary.text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    text: prismicT.KeyTextField;
+    /**
+     * url field in *ButtonLink → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: button_link.primary.url
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    url: prismicT.LinkField;
+}
+/**
+ * Default variation for ButtonLink Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `ButtonLink`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ButtonLinkSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ButtonLinkSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *ButtonLink*
+ *
+ */
+type ButtonLinkSliceVariation = ButtonLinkSliceDefault;
+/**
+ * ButtonLink Shared Slice
+ *
+ * - **API ID**: `button_link`
+ * - **Description**: `ButtonLink`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ButtonLinkSlice = prismicT.SharedSlice<"button_link", ButtonLinkSliceVariation>;
+/**
+ * Primary content in FullWidthPhoto → Primary
+ *
+ */
+interface FullWidthPhotoSliceDefaultPrimary {
+    /**
+     * Photo field in *FullWidthPhoto → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: full_width_photo.primary.photo
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    photo: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for FullWidthPhoto Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `FullWidthPhoto`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FullWidthPhotoSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<FullWidthPhotoSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *FullWidthPhoto*
+ *
+ */
+type FullWidthPhotoSliceVariation = FullWidthPhotoSliceDefault;
+/**
+ * FullWidthPhoto Shared Slice
+ *
+ * - **API ID**: `full_width_photo`
+ * - **Description**: `FullWidthPhoto`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FullWidthPhotoSlice = prismicT.SharedSlice<"full_width_photo", FullWidthPhotoSliceVariation>;
+/**
+ * Primary content in HalfWidthPhoto → Primary
+ *
+ */
+interface HalfWidthPhotoSliceDefaultPrimary {
+    /**
+     * Left photo field in *HalfWidthPhoto → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: half_width_photo.primary.left_photo
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    left_photo: prismicT.ImageField<never>;
+    /**
+     * Right photo field in *HalfWidthPhoto → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: half_width_photo.primary.right_photo
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    right_photo: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for HalfWidthPhoto Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `HalfWidthPhoto`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HalfWidthPhotoSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<HalfWidthPhotoSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *HalfWidthPhoto*
+ *
+ */
+type HalfWidthPhotoSliceVariation = HalfWidthPhotoSliceDefault;
+/**
+ * HalfWidthPhoto Shared Slice
+ *
+ * - **API ID**: `half_width_photo`
+ * - **Description**: `HalfWidthPhoto`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HalfWidthPhotoSlice = prismicT.SharedSlice<"half_width_photo", HalfWidthPhotoSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { ProjectDocumentData, ProjectDocument, AllDocumentTypes };
+        export type { ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ButtonLinkSliceDefaultPrimary, ButtonLinkSliceDefault, ButtonLinkSliceVariation, ButtonLinkSlice, FullWidthPhotoSliceDefaultPrimary, FullWidthPhotoSliceDefault, FullWidthPhotoSliceVariation, FullWidthPhotoSlice, HalfWidthPhotoSliceDefaultPrimary, HalfWidthPhotoSliceDefault, HalfWidthPhotoSliceVariation, HalfWidthPhotoSlice };
     }
 }
