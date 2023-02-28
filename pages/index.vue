@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>homepage</h1>
-    <nuxt-link to="tesst">random</nuxt-link>
+    <ProjectsList />
   </div>
 </template>
 
