@@ -34,6 +34,19 @@ export default {
 .project {
   display: flex;
   height: 460px;
+  background-color: #000;
+
+  &:hover {
+    .project__details {
+      background-color: rgb(15, 15, 15);
+    }
+    .project__cover {
+      opacity: 0.7;
+    }
+    h3 {
+      color: #fff;
+    }
+  }
 
   &__details {
     background-color: #f2f2f2;
@@ -46,11 +59,19 @@ export default {
 
   &__cover {
     flex-basis: 60%;
+    pointer-events: none;
+    transition: 0.1s linear;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  span {
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    padding: 8px 0;
   }
 }
 </style>

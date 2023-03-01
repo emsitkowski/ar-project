@@ -8,13 +8,13 @@
           {{ slice.primary.text }}
         </a>
       </div>
-
-      <img
-        v-if="slice.slice_type == 'full_width_photo'"
-        class="fullwidth"
-        :src="slice.primary.photo.url"
-        :alt="slice.primary.photo.alt"
-      />
+      <div class="fullwidth">
+        <img
+          v-if="slice.slice_type == 'full_width_photo'"
+          :src="slice.primary.photo.url"
+          :alt="slice.primary.photo.alt"
+        />
+      </div>
 
       <div class="halfwidth" v-if="slice.slice_type == 'half_width_photo'">
         <img
@@ -51,16 +51,24 @@ export default {
 
 <style lang="scss" scoped>
 .fullwidth {
-  width: 100%;
-  max-width: 100%;
+  img {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 .halfwidth {
   display: flex;
-
+  flex-direction: column;
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
   img {
-    width: 50%;
-    max-width: 50%;
+    display: block;
+    max-width: 100%;
+    @media (min-width: 576px) {
+      max-width: 50%;
+    }
   }
 }
 </style>
