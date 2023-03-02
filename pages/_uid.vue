@@ -8,12 +8,8 @@
           {{ slice.primary.text }}
         </a>
       </div>
-      <div class="fullwidth">
-        <img
-          v-if="slice.slice_type == 'full_width_photo'"
-          :src="slice.primary.photo.url"
-          :alt="slice.primary.photo.alt"
-        />
+      <div v-if="slice.slice_type == 'full_width_photo'" class="fullwidth">
+        <img :src="slice.primary.photo.url" :alt="slice.primary.photo.alt" />
       </div>
 
       <div class="halfwidth" v-if="slice.slice_type == 'half_width_photo'">
@@ -27,10 +23,13 @@
         />
       </div>
     </div>
+
+    <div v-for="project in moreProjects" :key="project.id">more project</div>
   </div>
 </template>
 
 <script>
+import { fetchAllProjects } from "../composables/fetchAllProjects";
 import { fetchSingleProject } from "../composables/fetchSingleProject";
 
 export default {
@@ -40,17 +39,26 @@ export default {
     // define slices
     const slices = project.data.slices;
 
-    return { project, slices };
+    const allProjects = await fetchAllProjects();
+
+    const moreProjects = [];
+
+    allProjects.forEach((project, index) => {
+      if (!project.slugs.includes(params.uid)) {
+        moreProjects.push(project);
+      }
+    });
+
+    return { project, slices, moreProjects };
   },
 
-  mounted() {
-    console.log(this.callToAction);
-  },
+  mounted() {},
 };
 </script>
 
 <style lang="scss" scoped>
 .fullwidth {
+  padding: 32px 0;
   img {
     display: block;
     max-width: 100%;
@@ -66,8 +74,18 @@ export default {
   img {
     display: block;
     max-width: 100%;
+
+    &:first-child {
+      padding: 0 0 32px 0;
+    }
     @media (min-width: 576px) {
       max-width: 50%;
+      &:first-child {
+        padding: 0 16px 0 0;
+      }
+      &:last-child {
+        padding: 0 0 0 16px;
+      }
     }
   }
 }
