@@ -2,7 +2,6 @@
   <div class="container">
     <Navbar />
     <Nuxt />
-    <Copyright />
   </div>
 </template>
 

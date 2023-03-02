@@ -5,6 +5,7 @@
       <h2>Pomagam markom wyróżnić się poprzez nieoczywiste rozwiązania.</h2>
     </div>
     <ProjectsList />
+    <Copyright />
   </div>
 </template>
 

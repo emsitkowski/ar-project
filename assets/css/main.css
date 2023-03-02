@@ -6,12 +6,19 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 10px;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
   font-family: "Poppins", sans-serif;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
@@ -32,17 +39,44 @@ h2 {
   color: rgb(153, 153, 153);
   font-weight: 400;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
 h3 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  h3 {
+    font-size: 1.3rem;
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 36px;
+  background: #222222;
+  border-radius: 200px;
+  color: white;
+  font-weight: 300;
+}
+
+.cta:hover {
+  background: #404040;
 }
 
 /* >>> Page transitions */

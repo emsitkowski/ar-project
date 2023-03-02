@@ -35,6 +35,7 @@
         </p>
       </div>
     </div>
+    <Copyright />
   </div>
 </template>
 

@@ -1,13 +1,17 @@
 <template>
   <div>
-    <h1>{{ project.data.name }}</h1>
-    <p>{{ project.data.description[0].text }}</p>
+    <div class="details">
+      <h1>{{ project.data.name }}</h1>
+      <span>{{ project.data.secondary_name }}</span>
+      <p>{{ project.data.description[0].text }}</p>
+    </div>
     <div v-for="slice in slices" :key="slice.id">
-      <div v-if="slice.slice_type == 'button_link'">
-        <a :href="slice.primary.url.url">
+      <div class="cta-wrapper" v-if="slice.slice_type == 'button_link'">
+        <a class="cta" :href="slice.primary.url.url" target="_blank">
           {{ slice.primary.text }}
         </a>
       </div>
+
       <div v-if="slice.slice_type == 'full_width_photo'" class="fullwidth">
         <img :src="slice.primary.photo.url" :alt="slice.primary.photo.alt" />
       </div>
@@ -25,6 +29,7 @@
     </div>
 
     <div v-for="project in moreProjects" :key="project.id">more project</div>
+    <Copyright />
   </div>
 </template>
 
@@ -57,8 +62,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0;
+
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 4px;
+  }
+
+  span {
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    padding: 8px 0;
+    margin-bottom: 32px;
+  }
+
+  p {
+    text-align: start;
+    max-width: 80%;
+    margin-bottom: 8px;
+  }
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .cta {
+    margin-bottom: 32px;
+  }
+}
 .fullwidth {
-  padding: 32px 0;
+  padding: 16px 0;
   img {
     display: block;
     max-width: 100%;
@@ -76,15 +114,15 @@ export default {
     max-width: 100%;
 
     &:first-child {
-      padding: 0 0 32px 0;
+      padding: 0 0 16px 0;
     }
     @media (min-width: 576px) {
       max-width: 50%;
       &:first-child {
-        padding: 0 16px 0 0;
+        padding: 0 8px 0 0;
       }
       &:last-child {
-        padding: 0 0 0 16px;
+        padding: 0 0 0 8px;
       }
     }
   }

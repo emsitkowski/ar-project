@@ -23,7 +23,7 @@ export default {
         crossorigin: true,
       },
       {
-        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap",
         rel: "stylesheet",
       },
     ],
@@ -46,4 +46,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // Loading bar
+  loading: {
+    color: "#000",
+    height: "6px",
+  },
 };

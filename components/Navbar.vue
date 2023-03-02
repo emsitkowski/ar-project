@@ -54,7 +54,7 @@
 export default {
   data() {
     return {
-      isMenuOpen: true,
+      isMenuOpen: false,
     };
   },
   methods: {
@@ -145,7 +145,7 @@ nav {
 
     &__close {
       position: absolute;
-      right: 6%;
+      right: 3%;
       top: 38px;
       user-select: none;
       cursor: pointer;

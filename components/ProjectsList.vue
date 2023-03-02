@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <div v-for="project in projects" :key="project.id">
-      <nuxt-link :to="project.slugs[0]" class="project">
-        <div class="project__cover">
-          <img :src="project.data.cover.url" alt="" />
-        </div>
-        <div class="project__details">
-          <h3>{{ project.data.name }}</h3>
-          <span>{{ project.data.category }}</span>
-        </div>
-      </nuxt-link>
-    </div>
+  <div style="position: relative">
+    <SkeletonLoader v-if="$fetchState.pending" />
+    <nuxt-link
+      v-for="project in projects"
+      :key="project.id"
+      :to="project.slugs[0]"
+      class="project"
+    >
+      <div class="project__cover">
+        <img :src="project.data.cover.url" alt="" />
+      </div>
+      <div class="project__details">
+        <h3>{{ project.data.name }}</h3>
+        <span>{{ project.data.category }}</span>
+      </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -32,16 +36,28 @@ export default {
 
 <style lang="scss" scoped>
 .project {
-  display: flex;
-  height: 460px;
-  background-color: #000;
+  display: grid;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    min-height: 460px;
+  }
+
+  &:nth-child(even) {
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
+  }
 
   &:hover {
     .project__details {
       background-color: rgb(15, 15, 15);
     }
     .project__cover {
-      opacity: 0.7;
+      filter: brightness(70%);
     }
     h3 {
       color: #fff;
@@ -55,6 +71,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 16px;
   }
 
   &__cover {
@@ -71,7 +88,9 @@ export default {
   span {
     color: rgb(153, 153, 153);
     font-weight: 400;
+    text-transform: uppercase;
     padding: 8px 0;
+    font-size: 14px;
   }
 }
 </style>

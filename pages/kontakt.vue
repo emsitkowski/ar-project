@@ -9,6 +9,7 @@
       <a href="mailto:ms.radkiewicz@gmail.com">ms.radkiewicz@gmail.com</a>
       <a href="tel:+48504907313">504 907 313</a>
     </div>
+    <Copyright />
   </div>
 </template>
 
