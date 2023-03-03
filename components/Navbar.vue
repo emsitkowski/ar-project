@@ -25,9 +25,9 @@
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
     </div>
-    <div class="logo">
-      <img src="~/assets/img/ar-logo.svg" alt="" />
-    </div>
+    <nuxt-link to="/" class="logo">
+      <img src="~/assets/img/ar-logo.svg" alt="logo" />
+    </nuxt-link>
 
     <!-- fullscreen menu -->
     <div v-if="isMenuOpen" class="menu">
