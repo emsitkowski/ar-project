@@ -57,7 +57,7 @@ export default {
       background-color: rgb(15, 15, 15);
     }
     .project__cover {
-      filter: brightness(70%);
+      filter: brightness(90%);
     }
     h3 {
       color: #fff;

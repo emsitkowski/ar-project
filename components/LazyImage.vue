@@ -29,6 +29,7 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
+  min-height: 180px;
   background: #ebebeb;
   overflow: hidden;
 
@@ -54,6 +55,7 @@ export default {
   img {
     width: 100%;
     height: 100%;
+    min-height: 180px;
     object-fit: cover;
     opacity: 0;
     transition: 0.6s ease-in-out;

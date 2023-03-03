@@ -40,7 +40,13 @@
           :key="mproject.id"
         >
           <nuxt-link :to="mproject.slugs[0]">
-            {{ mproject.data.name }}
+            <div class="more__cover">
+              <LazyImage :src="mproject.data.cover.url" alt="test" />
+            </div>
+            <div class="more__details">
+              <h3>{{ mproject.data.name }}</h3>
+              <span>{{ mproject.data.category }}</span>
+            </div>
           </nuxt-link>
         </div>
       </div>
@@ -145,18 +151,62 @@ export default {
 
   .more__wrapper {
     display: flex;
+
     &-box {
-      width: 33.333%;
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
       min-height: 320px;
       background: #f7f7f7;
+
+      @media (min-width: 576px) {
+        width: 33.333%;
+      }
+
+      &:hover {
+        .more__details {
+          background-color: rgb(15, 15, 15);
+        }
+        .more__cover {
+          filter: brightness(70%);
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+
+      span {
+        font-size: 14px;
+        color: rgb(153, 153, 153);
+        font-weight: 400;
+        text-transform: uppercase;
+      }
 
       a {
         height: 100%;
         width: 100%;
+        display: grid;
       }
     }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 16px;
+  }
+
+  &__cover {
+    transition: 0.1s linear;
   }
 }
 </style>

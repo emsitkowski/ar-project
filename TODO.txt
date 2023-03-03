@@ -1,4 +1,8 @@
 – add favicon
 – move cms to Aga's new Prismic account
 - composables: filter instead of multiple fetches
-- add menu
+– fix more project link
+- project gallery zoom
+- fix text o-mnie
+- more project gap
+- remove delay hover project

@@ -84,6 +84,7 @@ a {
   color: white;
   font-weight: 300;
   font-size: 14px;
+  height: 48px;
 }
 
 @media (min-width: 576px) {
