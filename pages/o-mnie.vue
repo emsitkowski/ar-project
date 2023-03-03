@@ -4,7 +4,7 @@
       <h1>poznajmy się!</h1>
     </div>
     <div class="content">
-      <img src="~assets/img/aga-radkiewicz.jpg" alt="Aga Radkiewicz" />
+      <LazyImage src="~assets/img/aga-radkiewicz.jpg" alt="Aga Radkiewicz" />
       <div class="content__copy">
         <p>
           <strong>Nazywam się Aga Radkiewicz,</strong>
