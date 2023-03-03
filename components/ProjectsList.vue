@@ -8,7 +8,7 @@
       class="project"
     >
       <div class="project__cover">
-        <img :src="project.data.cover.url" alt="" />
+        <LazyImage :src="project.data.cover.url" alt="test" />
       </div>
       <div class="project__details">
         <h3>{{ project.data.name }}</h3>

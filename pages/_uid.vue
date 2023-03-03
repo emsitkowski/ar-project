@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="project">
     <div class="details">
       <h1>{{ project.data.name }}</h1>
       <span>{{ project.data.secondary_name }}</span>
@@ -13,15 +13,18 @@
       </div>
 
       <div v-if="slice.slice_type == 'full_width_photo'" class="fullwidth">
-        <img :src="slice.primary.photo.url" :alt="slice.primary.photo.alt" />
+        <LazyImage
+          :src="slice.primary.photo.url"
+          :alt="slice.primary.photo.alt"
+        />
       </div>
 
       <div class="halfwidth" v-if="slice.slice_type == 'half_width_photo'">
-        <img
+        <LazyImage
           :src="slice.primary.left_photo.url"
           :alt="slice.primary.left_photo.alt"
         />
-        <img
+        <LazyImage
           :src="slice.primary.right_photo.url"
           :alt="slice.primary.right_photo.alt"
         />
@@ -75,6 +78,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.project {
+  min-height: 100vh;
+}
 .details {
   display: flex;
   flex-direction: column;
@@ -109,7 +115,7 @@ export default {
   }
 }
 .fullwidth {
-  padding: 16px 0;
+  padding: 8px 0;
   img {
     display: block;
     max-width: 100%;
@@ -119,25 +125,14 @@ export default {
 .halfwidth {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  padding: 8px 0;
   @media (min-width: 576px) {
     flex-direction: row;
   }
   img {
     display: block;
     max-width: 100%;
-
-    &:first-child {
-      padding: 0 0 16px 0;
-    }
-    @media (min-width: 576px) {
-      max-width: 50%;
-      &:first-child {
-        padding: 0 8px 0 0;
-      }
-      &:last-child {
-        padding: 0 0 0 8px;
-      }
-    }
   }
 }
 
