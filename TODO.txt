@@ -1,3 +1,5 @@
 – add favicon
 – move cms to Aga's new Prismic account
 - composables: filter instead of multiple fetches
+- fix navbar showing on mobile (!)
+- add menu
