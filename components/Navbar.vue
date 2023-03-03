@@ -45,7 +45,19 @@
         ></path>
       </svg>
 
-      <div class="menu__content">text</div>
+      <div class="menu__content">
+        <ul>
+          <li @click="toggleMenu">
+            <nuxt-link to="/">Projekty</nuxt-link>
+          </li>
+          <li @click="toggleMenu">
+            <nuxt-link to="o-mnie">O mnie</nuxt-link>
+          </li>
+          <li @click="toggleMenu">
+            <nuxt-link to="kontakt">Kontakt</nuxt-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
@@ -141,6 +153,20 @@ nav {
       justify-content: center;
       width: 100%;
       height: 100%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          padding: 6px 0;
+          a {
+            font-size: 24px;
+          }
+        }
+      }
     }
 
     &__close {
