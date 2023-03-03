@@ -145,7 +145,7 @@ nav {
 
     &__close {
       position: absolute;
-      right: 3%;
+      right: 6%;
       top: 38px;
       user-select: none;
       cursor: pointer;
