@@ -28,7 +28,20 @@
       </div>
     </div>
 
-    <div v-for="project in moreProjects" :key="project.id">more project</div>
+    <div class="more">
+      <h3>zobacz więcej</h3>
+      <div class="more__wrapper">
+        <div
+          class="more__wrapper-box"
+          v-for="mproject in moreProjects"
+          :key="mproject.id"
+        >
+          <nuxt-link :to="mproject.slugs[0]">
+            {{ mproject.data.name }}
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
     <Copyright />
   </div>
 </template>
@@ -123,6 +136,30 @@ export default {
       }
       &:last-child {
         padding: 0 0 0 8px;
+      }
+    }
+  }
+}
+
+.more {
+  margin-top: 64px;
+
+  h3 {
+    margin-bottom: 32px;
+  }
+
+  .more__wrapper {
+    display: flex;
+    &-box {
+      width: 33.333%;
+      display: flex;
+      flex-direction: column;
+      min-height: 320px;
+      background: #f7f7f7;
+
+      a {
+        height: 100%;
+        width: 100%;
       }
     }
   }
