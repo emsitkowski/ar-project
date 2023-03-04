@@ -151,6 +151,7 @@ export default {
 
   .more__wrapper {
     display: flex;
+    gap: 16px;
 
     &-box {
       width: 100%;
@@ -192,7 +193,8 @@ export default {
       a {
         height: 100%;
         width: 100%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -201,12 +203,11 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    padding: 16px;
+    padding: 32px 16px;
   }
 
   &__cover {
-    transition: 0.1s linear;
+    flex-grow: 1;
   }
 }
 </style>

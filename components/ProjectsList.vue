@@ -77,7 +77,6 @@ export default {
   &__cover {
     flex-basis: 60%;
     pointer-events: none;
-    transition: 0.1s linear;
     img {
       width: 100%;
       height: 100%;

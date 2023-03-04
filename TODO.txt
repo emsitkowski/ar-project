@@ -4,5 +4,3 @@
 – fix more project link
 - project gallery zoom
 - fix text o-mnie
-- more project gap
-- remove delay hover project
