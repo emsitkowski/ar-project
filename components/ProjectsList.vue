@@ -2,6 +2,7 @@
   <div style="position: relative">
     <SkeletonLoader v-if="$fetchState.pending" />
     <nuxt-link
+      v-else
       v-for="project in projects"
       :key="project.id"
       :to="project.slugs[0]"

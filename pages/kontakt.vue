@@ -12,7 +12,7 @@
       <a href="tel:+48504907313">504 907 313</a>
       <img
         class="contact__phone"
-        src="~/assets/img/old-phone.png"
+        src="~/assets/img/old-phone.jpg"
         alt="telefon"
       />
     </div>

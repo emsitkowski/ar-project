@@ -13,21 +13,27 @@
       </div>
 
       <div v-if="slice.slice_type == 'full_width_photo'" class="fullwidth">
-        <LazyImage
-          :src="slice.primary.photo.url"
-          :alt="slice.primary.photo.alt"
-        />
+        <a :href="slice.primary.photo.url" class="glightbox">
+          <LazyImage
+            :src="slice.primary.photo.url"
+            :alt="slice.primary.photo.alt"
+          />
+        </a>
       </div>
 
       <div class="halfwidth" v-if="slice.slice_type == 'half_width_photo'">
-        <LazyImage
-          :src="slice.primary.left_photo.url"
-          :alt="slice.primary.left_photo.alt"
-        />
-        <LazyImage
-          :src="slice.primary.right_photo.url"
-          :alt="slice.primary.right_photo.alt"
-        />
+        <a :href="slice.primary.left_photo.url" class="glightbox">
+          <LazyImage
+            :src="slice.primary.left_photo.url"
+            :alt="slice.primary.left_photo.alt"
+          />
+        </a>
+        <a :href="slice.primary.left_photo.url" class="glightbox">
+          <LazyImage
+            :src="slice.primary.right_photo.url"
+            :alt="slice.primary.right_photo.alt"
+          />
+        </a>
       </div>
     </div>
 
@@ -79,7 +85,13 @@ export default {
     return { project, slices, moreProjects };
   },
 
-  mounted() {},
+  mounted() {
+    this.$initGLightbox();
+  },
+
+  beforeDestroy() {
+    this.$destroyGLightbox();
+  },
 };
 </script>
 
@@ -122,9 +134,9 @@ export default {
 }
 .fullwidth {
   padding: 8px 0;
-  img {
-    display: block;
-    max-width: 100%;
+
+  :deep(img) {
+    cursor: zoom-in;
   }
 }
 
@@ -136,9 +148,9 @@ export default {
   @media (min-width: 576px) {
     flex-direction: row;
   }
-  img {
-    display: block;
-    max-width: 100%;
+
+  :deep(img) {
+    cursor: zoom-in;
   }
 }
 
@@ -151,7 +163,12 @@ export default {
 
   .more__wrapper {
     display: flex;
+    flex-direction: column;
     gap: 16px;
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
 
     &-box {
       width: 100%;
@@ -159,7 +176,6 @@ export default {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      min-height: 320px;
       background: #f7f7f7;
 
       @media (min-width: 576px) {
@@ -203,7 +219,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 32px 16px;
+    padding: 24px 16px;
   }
 
   &__cover {

@@ -1,12 +1,6 @@
 <template>
   <div class="lazy-image">
-    <img
-      @load="toggleLoading"
-      :src="src"
-      :alt="alt"
-      loading="lazy"
-      ref="image"
-    />
+    <img @load="toggleLoading" :src="src" :alt="alt" ref="image" />
   </div>
 </template>
 
@@ -16,7 +10,6 @@ export default {
 
   methods: {
     toggleLoading() {
-      console.log("loaded!");
       this.$refs.image.parentElement.classList.add("loaded");
     },
   },

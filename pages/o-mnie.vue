@@ -9,25 +9,26 @@
         alt="Aga Radkiewicz"
       />
       <div class="content__copy">
+        <h3>
+          <strong>Nazywam się Aga Radkiewicz.</strong>
+        </h3>
         <p>
-          <strong>Nazywam się Aga Radkiewicz,</strong>
-        </p>
-        <p>
-          wiem jak pomagać firmom wyróżnić się poprzez niezwykłe kreacje
-          wizualne. Zajmuję się projektowaniem graficznym od kilku lat i
-          potrafię z sukcesem zidentyfikować czego potrzebują marki, aby
+          Wiem jak pomagać firmom wyróżnić się poprzez niezwykłe kreacje
+          wizualne. Zajmuję się projektowaniem graficznym od kilku lat
+          i&nbsp;potrafię z sukcesem zidentyfikować czego potrzebują marki, aby
           przyciągnąć uwagę swoich odbiorców. Projekty które tworzę nie tylko są
-          estetyczne i piękne, ale przede wszystkim mają sens i coś komunikują.
-          Mam sporą wiedzę w zakresie UX design – zawsze biorę pod uwagę
-          wrażenia końcowego odbiorcy zarówno przy projektowaniu stron
-          internetowych, jak i przy projektach marketingowych.
+          estetyczne i&nbsp;piękne, ale przede wszystkim mają sens
+          i&nbsp;coś&nbsp;komunikują. Mam sporą wiedzę w zakresie UX design –
+          zawsze biorę pod uwagę wrażenia końcowego odbiorcy zarówno
+          przy&nbsp;projektowaniu stron internetowych, jak i&nbsp;przy
+          projektach marketingowych.
         </p>
         <p>
-          Jestem ciekawa świata i różnych kultur. Potrafię zasiedzieć się na
-          długie godziny planując wyprawy i czytając o ludziach i ich kulturach.
-          Interesuje mnie w jaki sposób ludzie podejmują decyzje zakupowe i
-          życiowe, dlatego często znajdziesz mnie z nosem w książkach o
-          psychologii człowieka.
+          Jestem ciekawa świata i różnych kultur. Potrafię zasiedzieć&nbsp;się
+          na długie godziny planując wyprawy i&nbsp;czytając o&nbsp;ludziach
+          i&nbsp;ich&nbsp;kulturach. Interesuje mnie w jaki sposób ludzie
+          podejmują decyzje zakupowe i życiowe, dlatego często znajdziesz mnie z
+          nosem w&nbsp;książkach o&nbsp;psychologii człowieka.
         </p>
         <p>
           <strong
@@ -53,6 +54,7 @@ export default {};
   gap: 32px;
 
   @media (min-width: 768px) {
+    gap: 64px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -64,6 +66,9 @@ export default {};
   }
 
   &__copy {
+    h3 {
+      margin-bottom: 16px;
+    }
   }
 
   p {

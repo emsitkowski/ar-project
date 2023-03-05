@@ -1,7 +1,6 @@
 <template>
   <div class="skeleton-wrapper">
     <div class="skeleton-box"></div>
-    <div class="skeleton-box"></div>
   </div>
 </template>
 

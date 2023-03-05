@@ -10,8 +10,12 @@ export default {};
 
 <style lang="scss" scoped>
 .copyright {
-  padding: 86px 0;
+  padding: 64px 0;
   text-align: center;
+
+  @media (min-width: 576px) {
+    padding: 86px 0;
+  }
 
   p {
     color: #999;
