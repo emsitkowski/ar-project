@@ -1,7 +1,10 @@
 // >>>> Get current API ref
 export async function getCurrentRef() {
+  const access_token =
+    "MC5aQWVsN3hBQUFDZ0FVNlJw.77-977-977-9bXrvv73vv73vv73vv73vv71-77-977-9Tu-_vSAjHgp5JVnvv73vv70Y77-977-977-977-977-977-9QA";
+
   const ref = await fetch(
-    "https://ar-project.cdn.prismic.io/api/v2?access_token=MC5ZXzM3UXhBQUFDWUFLY3Rp.77-9I1nvv73vv73vv715bO-_ve-_ve-_ve-_vU3vv73vv73vv73vv71k77-977-9FwHvv70o77-977-977-9H--_ve-_vQbvv70"
+    `https://agaradkiewicz.cdn.prismic.io/api/v2?access_token=${access_token}`
   )
     .then((res) => res.json())
     .then((res) => res.refs[0].ref);
