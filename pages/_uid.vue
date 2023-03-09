@@ -163,6 +163,10 @@ export default {
     margin-bottom: 32px;
   }
 
+  &__cover {
+    height: 200px;
+  }
+
   .more__wrapper {
     display: flex;
     flex-direction: column;

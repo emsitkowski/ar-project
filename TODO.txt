@@ -1,7 +1,5 @@
 – add favicon
-– move cms to Aga's new Prismic account
 - composables: filter instead of multiple fetches
 – fix more project link (fixed itself?)
 - fix more projects view mobile
 - fix mobile paddings and margins
-- more projects - limit to 3
