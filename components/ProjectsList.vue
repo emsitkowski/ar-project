@@ -31,6 +31,11 @@ export default {
 
   async fetch() {
     this.projects = await fetchAllProjects();
+
+    // sort projects by publication date
+    this.projects.sort((a, b) =>
+      a.first_publication_date < b.first_publication_date ? 1 : -1
+    );
   },
 };
 </script>
