@@ -4,3 +4,4 @@
 – fix more project link (fixed itself?)
 - fix more projects view mobile
 - fix mobile paddings and margins
+- more projects - limit to 3

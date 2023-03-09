@@ -78,7 +78,9 @@ export default {
 
     allProjects.forEach((project, index) => {
       if (!project.slugs.includes(params.uid)) {
-        moreProjects.push(project);
+        if (moreProjects.length < 3) {
+          moreProjects.push(project);
+        }
       }
     });
 
