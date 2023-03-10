@@ -1,5 +1,3 @@
-– add favicon
 - composables: filter instead of multiple fetches
-– fix more project link (fixed itself?)
-- fix more projects view mobile
-- fix mobile paddings and margins
+
+- add seo titles to all pages

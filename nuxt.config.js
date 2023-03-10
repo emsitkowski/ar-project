@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Agnieszka Radkiewicz – portfolio",
+    title: "Aga Radkiewicz – portfolio",
     htmlAttrs: {
       lang: "pl",
     },
