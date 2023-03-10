@@ -28,7 +28,7 @@
             :alt="slice.primary.left_photo.alt"
           />
         </a>
-        <a :href="slice.primary.left_photo.url" class="glightbox">
+        <a :href="slice.primary.right_photo.url" class="glightbox">
           <LazyImage
             :src="slice.primary.right_photo.url"
             :alt="slice.primary.right_photo.alt"
@@ -135,7 +135,7 @@ export default {
   }
 }
 .fullwidth {
-  padding: 8px 0;
+  padding: 4px 0;
 
   :deep(img) {
     cursor: zoom-in;
@@ -145,8 +145,8 @@ export default {
 .halfwidth {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 8px 0;
+  gap: 8px;
+  padding: 4px 0;
   @media (min-width: 576px) {
     flex-direction: row;
   }
