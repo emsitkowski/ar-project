@@ -77,7 +77,16 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 16px 32px;
+
+    span {
+      color: rgb(153, 153, 153);
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 8px 0;
+      font-size: 14px;
+      text-align: center;
+    }
   }
 
   &__cover {
@@ -88,14 +97,6 @@ export default {
       height: 100%;
       object-fit: cover;
     }
-  }
-
-  span {
-    color: rgb(153, 153, 153);
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 8px 0;
-    font-size: 14px;
   }
 }
 </style>
