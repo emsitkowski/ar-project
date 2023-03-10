@@ -29,7 +29,7 @@ export default {
         rel: "icon",
         type: "image/png",
         sizes: "192x192",
-        href: "/favicon-192x192.png",
+        href: "/android-chrome-192x192.png",
       },
       {
         rel: "apple-touch-icon",
