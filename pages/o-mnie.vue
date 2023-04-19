@@ -13,28 +13,23 @@
           <strong>Nazywam się Aga Radkiewicz.</strong>
         </h3>
         <p>
-          Wiem jak pomagać firmom wyróżnić się poprzez niezwykłe kreacje
-          wizualne. Zajmuję się projektowaniem graficznym od kilku lat
-          i&nbsp;potrafię z sukcesem zidentyfikować czego potrzebują marki, aby
-          przyciągnąć uwagę swoich odbiorców. Projekty które tworzę nie tylko są
-          estetyczne i&nbsp;piękne, ale przede wszystkim mają sens
-          i&nbsp;coś&nbsp;komunikują. Mam sporą wiedzę w zakresie UX design –
-          zawsze biorę pod uwagę wrażenia końcowego odbiorcy zarówno
-          przy&nbsp;projektowaniu stron internetowych, jak i&nbsp;przy
-          projektach marketingowych.
-        </p>
-        <p>
-          Jestem ciekawa świata i różnych kultur. Potrafię zasiedzieć&nbsp;się
-          na długie godziny planując wyprawy i&nbsp;czytając o&nbsp;ludziach
-          i&nbsp;ich&nbsp;kulturach. Interesuje mnie w jaki sposób ludzie
-          podejmują decyzje zakupowe i życiowe, dlatego często znajdziesz mnie z
-          nosem w&nbsp;książkach o&nbsp;psychologii człowieka.
+          Cześć! Jestem Aga Radkiewicz i&nbsp;zajmuję się projektowaniem
+          graficznym. Zajmuję się tworzeniem kreacji wizualnych,
+          które&nbsp;pomagają firmom wyróżnić się na&nbsp;rynku. Dzięki mojemu
+          doświadczeniu i&nbsp;umiejętnościom, potrafię dokładnie zrozumieć
+          potrzeby marki&nbsp;i&nbsp;jej&nbsp;odbiorców. Każdy&nbsp;projekt,
+          który tworzę, ma nie tylko być estetyczny, ale&nbsp;również
+          przekazywać sens i&nbsp;wartości. Posiadam również wiedzę
+          z&nbsp;zakresu UX&nbsp;design, dzięki czemu uwzględniam oczekiwania
+          i&nbsp;wrażenia końcowego odbiorcy przy projektowaniu stron
+          internetowych i&nbsp;działań marketingowych.
         </p>
         <p>
           <strong
-            >Jeśli chcesz przenieść strategię marketingową swojej firmy na
-            wyższy poziom zadzwoń lub napisz do mnie. Posiadam odpowiednie
-            narzędzia i wiedzę, aby Twoja firma była pozytywnie odbierana.
+            >Jeśli chcesz podnieść strategię marketingową Twojej firmy na wyższy
+            poziom, skontaktuj się ze&nbsp;mną dzwoniąc lub&nbsp;pisząc.
+            Posiadam odpowiednie narzędzia i&nbsp;wiedzę, aby Twoja firma była
+            pozytywnie postrzegana.
           </strong>
         </p>
       </div>
