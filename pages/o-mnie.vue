@@ -15,14 +15,14 @@
         <p>
           Cześć! Jestem Aga Radkiewicz i&nbsp;zajmuję się projektowaniem
           graficznym. Zajmuję się tworzeniem kreacji wizualnych,
-          które&nbsp;pomagają firmom wyróżnić się na&nbsp;rynku. Dzięki mojemu
-          doświadczeniu i&nbsp;umiejętnościom, potrafię dokładnie zrozumieć
-          potrzeby marki&nbsp;i&nbsp;jej&nbsp;odbiorców. Każdy&nbsp;projekt,
-          który tworzę, ma nie tylko być estetyczny, ale&nbsp;również
-          przekazywać sens i&nbsp;wartości. Posiadam również wiedzę
-          z&nbsp;zakresu UX&nbsp;design, dzięki czemu uwzględniam oczekiwania
-          i&nbsp;wrażenia końcowego odbiorcy przy projektowaniu stron
-          internetowych i&nbsp;działań marketingowych.
+          które&nbsp;pomagają firmom wyróżnić się na&nbsp;rynku.
+          Dzięki&nbsp;mojemu doświadczeniu i&nbsp;umiejętnościom, potrafię
+          dokładnie zrozumieć potrzeby marki&nbsp;i&nbsp;jej&nbsp;odbiorców.
+          Każdy&nbsp;projekt, który tworzę, ma nie tylko być estetyczny,
+          ale&nbsp;również przekazywać sens i&nbsp;wartości. Posiadam również
+          wiedzę z&nbsp;zakresu UX&nbsp;design, dzięki czemu uwzględniam
+          oczekiwania i&nbsp;wrażenia końcowego odbiorcy przy projektowaniu
+          stron internetowych i&nbsp;działań&nbsp;marketingowych.
         </p>
         <p>
           <strong
