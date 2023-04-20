@@ -10,26 +10,26 @@
       />
       <div class="content__copy">
         <h3>
-          <strong>Nazywam się Aga Radkiewicz.</strong>
+          <strong>Nazywam się Aga Radkiewicz,</strong>
         </h3>
         <p>
-          Cześć! Jestem Aga Radkiewicz i&nbsp;zajmuję się projektowaniem
-          graficznym. Zajmuję się tworzeniem kreacji wizualnych,
-          które&nbsp;pomagają firmom wyróżnić się na&nbsp;rynku.
-          Dzięki&nbsp;mojemu doświadczeniu i&nbsp;umiejętnościom, potrafię
-          dokładnie zrozumieć potrzeby marki&nbsp;i&nbsp;jej&nbsp;odbiorców.
-          Każdy&nbsp;projekt, który tworzę, ma nie tylko być estetyczny,
-          ale&nbsp;również przekazywać sens i&nbsp;wartości. Posiadam również
-          wiedzę z&nbsp;zakresu UX&nbsp;design, dzięki czemu uwzględniam
-          oczekiwania i&nbsp;wrażenia końcowego odbiorcy przy projektowaniu
-          stron internetowych i&nbsp;działań&nbsp;marketingowych.
+          jestem projektantką graficzną z&nbsp;czteroletnim stażem pracy na tym
+          stanowisku. Zajmuję&nbsp;się tworzeniem kreacji wizualnych, które
+          pomagają firmom wyróżnić się na&nbsp;rynku. Dzięki mojemu
+          doświadczeniu i&nbsp;umiejętnościom, potrafię dokładnie zrozumieć
+          potrzeby marki i&nbsp;jej odbiorców. Każdy projekt, który tworzę, ma
+          nie tylko być estetyczny, ale również przekazywać sens
+          i&nbsp;wartości. Posiadam również wiedzę z&nbsp;zakresu UX design,
+          dzięki czemu uwzględniam oczekiwania i&nbsp;wrażenia końcowego
+          odbiorcy przy projektowaniu stron internetowych i&nbsp;działań
+          marketingowych.
         </p>
         <p>
           <strong
             >Jeśli chcesz podnieść strategię marketingową Twojej firmy na wyższy
-            poziom, skontaktuj się ze&nbsp;mną dzwoniąc lub&nbsp;pisząc.
-            Posiadam odpowiednie narzędzia i&nbsp;wiedzę, aby Twoja firma była
-            pozytywnie postrzegana.
+            poziom, skontaktuj się ze mną dzwoniąc lub pisząc. Posiadam
+            odpowiednie narzędzia i&nbsp;wiedzę, aby Twoja firma była pozytywnie
+            postrzegana.
           </strong>
         </p>
       </div>
