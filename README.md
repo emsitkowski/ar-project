@@ -5,7 +5,7 @@
 
 
 
-It is a simple, statically generated portfolio website built with Nuxt and headless CMS (prismic.io).
+Simple, statically generated portfolio website built with Nuxt and headless CMS (prismic.io).
 
 ## Key features
 
