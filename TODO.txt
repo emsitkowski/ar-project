@@ -1,3 +1,0 @@
-- composables: filter instead of multiple fetches
-
-- add seo titles to all pages
