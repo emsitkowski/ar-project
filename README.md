@@ -1,9 +1,6 @@
 # agaradkiewicz.pl – Graphic Designer portfolio
 
-
-![ar-screenshot](https://github.com/emsitkowski/ar-project/assets/40630259/f5ce2f86-aed7-4397-9099-32acc05ec347)
-
-
+![arpost](https://github.com/user-attachments/assets/22a59aaf-92d7-4f53-a972-9c04e78b8943)
 
 Minimalistic, statically generated portfolio website built with Nuxt and headless CMS (prismic.io).
 
