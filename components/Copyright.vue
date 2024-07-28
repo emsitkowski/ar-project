@@ -17,18 +17,22 @@ export default {};
 <style lang="scss" scoped>
 .copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 4px 24px;
+  flex-wrap: wrap;
   padding: 64px 0;
   text-align: center;
 
   @media (min-width: 576px) {
     padding: 86px 0;
+    justify-content: space-between;
   }
 
   p {
     color: #999;
     font-size: 14px;
+    text-align: center;
   }
 
   a {
